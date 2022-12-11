@@ -1,0 +1,248 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-size: small;
+    font-family:serif;
+}
+
+
+/* header barra de navegacion */
+
+header{
+    background-color: #013440;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    position: fixed;
+    width: 100%;
+    margin-top: -10px;
+    z-index: 99;
+}
+
+img {
+    width: 100%;
+}
+
+.input{
+    width: 500px;
+    padding: 10px;
+    outline: none;
+    border-radius: 20px;
+    font-size: x-small;
+    font-family:serif;
+}
+
+.logo {
+    width: 100%;
+    height: 50px;
+}
+
+.menu {
+    display: inline-block;
+    padding: 15px;
+    
+}
+
+.menu1 {
+    text-decoration: none;
+    color: white;
+}
+
+.menu1:hover {
+    color: white;
+    text-decoration:underline;
+}
+
+.cart{
+    width: 39px;
+    height: 38px;
+}
+.cart-products{
+    position: absolute!important;
+    top: 80px;
+    right: 0px;
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    display: none;
+    min-width: 220px;
+}
+
+.cart:hover{
+    margin-bottom: 16px;
+    transition-duration: .5s;
+}
+
+header p{
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    background-color: #fff;
+    padding: 1px 6px;
+    border-radius: 50%;
+    color:black;
+    font-weight: 700;
+    font-family:serif;
+    line-height: 18px;
+}
+
+
+/* promocion  */
+.anuncio {
+    background-color: #B4D2D9;
+    height: 200px;
+    padding-top: 100px;
+}
+
+h5 {
+    text-align:center;
+    font-size: 50px;
+}
+
+p {
+    text-align:center;
+    font-size: 20px;
+}
+
+
+
+/*--FORMULARIO-------------------*/
+.form {
+    width: 450px;
+    padding: 30px;
+    position: relative;
+    top: 30px;
+    margin: auto;
+    background: #B4D2D9;
+    border-radius: 5px;
+}
+/*--TITULO-----------------------*/
+.titulo{
+    color: #013440;
+    margin-bottom: 20px;
+}
+/*--CAJAS-DE-DATOS---------------*/
+.cajas{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    border: none;
+    border-left: 10px solid black;
+    transition: all .5s ease;
+}
+.cajas:hover, .cajas:focus{
+    border-left: 10px solid #013440;
+}
+/*--TERMINOS-Y-CONDICIONES-------*/
+.termino1{
+    text-align: center;
+    color: black;
+}
+.termino2{
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+.termino2:hover{
+    color: #013440;
+}
+/*--BOTON-DE-REGISTRARSE---------*/
+.btn{
+    width: 100%;
+    padding: 15px;
+    border-radius: 2px;
+    border: none;
+    margin: 20px 0;
+    font-size: 15px;
+    background: #013440;
+    color: white;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.btn:hover{
+    background: #013440;
+}
+/*--YA-TENGO-CUENTA--------------*/
+.tengo-cuenta{
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+.tengo-cuenta:hover{
+    color: #013440;
+}
+
+
+/* 
+footer  */
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+    bottom: 0;
+    width: 100%;
+	background-color: #B4D2D9;
+    padding: 20px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+    font-size: large;
+	color: rgb(43, 41, 41);
+	text-transform: capitalize;
+	margin-bottom: 35px;
+}
+
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	color: rgb(43, 41, 41);
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgb(43, 41, 41);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #363636;
+	background-color: #ffffff;
+}
+
+.ultimo {
+    background-color: #013440;
+    color: white;
+    font-weight: bold;
+    font-family:serif;
+    text-align: center;
+}

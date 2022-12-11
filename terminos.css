@@ -1,0 +1,42 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-size: small;
+    font-family:serif;
+}
+
+.section{
+    /* display: flex;
+    flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    text-align:center;
+    font-size: 50px;
+}
+
+h1 {
+    text-align: justify;
+        
+}
+
+p {
+    text-align:justify;
+}
+
+ul {
+    padding: 10px;
+    text-align: justify;
+}
+
+a {
+    color: black;
+    font-size: large;
+}

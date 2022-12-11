@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarkeTec</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+
+</head>
+<body>
+    <header>
+			
+        <div>
+            <img class="logo"  src="/imagenes/final_azul.png" alt="Logo de la marca" >
+        </div>
+        <input type="text" name="buscador" id="buscador" placeholder="Buscar...">
+        <nav class="navmenu">
+           <ul class="nav-links">
+                <li class="menu"><a class="menu1" href="/index.html">Inicio</a></li>
+                <li class="menu"><a class="menu1" href="/categorias.html">Categorias</a></li>
+                <li class="menu"><a class="menu1" href="/vender.html">Vender</a></li>
+                <li class="menu"><a class="menu1" href="/ayuda.html">Ayuda</a></li>
+           </ul>            
+        </nav>
+
+        <div>
+            <img onmouseover="showCart(this)" class="cart" src="./imagenes/compras.png" alt="">
+            <p class="count-product">0</p>
+        </div>
+        <div class="cart-products" id="products-id">
+            <p class="close-btn" onclick="closeBtn()">X</p>
+            <h3>Mi carrito</h3>
+            <div class="card-items">
+               
+            </div>
+            <h2>Total: <strong class="price-total">0</strong> $</h2>
+        </div>
+    </div>        </header>
+
+        <section class="promocion">
+            <div class="anuncio">
+                <h5>En MarkeTec</h5>
+                <p>Tenemos todo para ti</p>
+            </div>
+        </section>
+
+        <br>
+    <div class="section">
+
+        <section class="container">
+
+            Aprovecha las promociones
+
+            <br><br>
+
+            <div class="products2">
+                <div class="carts2">
+                    <div>
+                       <a href="./categorias.html"> <img src="./imagenes/100065928.jpg" alt=""> </a> 
+                      
+                    </div>
+                    <p class="title">Audífonos Bluetooth Misik Orejas de Gato </p>
+                    <h1>Encuentralo en categoria de juguetes</h1>
+                    <button>Hasta el -30%</button>
+                </div>
+                
+
+                <div class="carts2">
+                    <div>
+                     <a href="./categorias.html"><img src="./imagenes/1041_1.webp" alt=""></a>   
+                    </div>
+                    <p class="title">Papel Higiénico Vogue 400 Hojas </p>
+                    <h1>Encuentralo en categoria de abarrotes</h1>
+                    <button>Hasta el -10%</button>
+                </div>
+
+                <div class="carts2">
+                    <div>
+                        <a href="./categorias.html"> <img src="./imagenes/image_06ca7234-a97e-4889-8c33-779027f55447_720x@2x.webp" alt=""></a>
+                    </div>
+                    <p class="title">Plumones </p>
+                    <h1>Encuentralo en categoria de papeleria</h1>
+                    <button>Hasta el -25%</button>
+                </div>
+
+                <div class="carts2">
+                    <div>
+                        <a href=""><img src="./imagenes/D_NQ_NP_927914-MLM43793554474_102020-O.jpg" alt=""></a>
+                        <p> Figura Yoda de The Child</p>
+                        <h1>Encuentralo en categoria de juguetes</h1>
+                    </div>
+                    <button>Hasta el 15%</button>
+                </div>
+        </section>
+
+        <section class="container">
+
+            Tenemos ... <br> <br>
+
+            <div class="products3">
+                <div class="carts3">
+                    <div>
+                       <a href="./categorias.html"> <img src="./imagenes/istockphoto-913649914-170667a.jpg" alt=""> </a> 
+                      
+                    </div>
+                    <p class="title"> Comida Mexicana </p>
+                    <h1> Tenemos diferentes antojitos de comida mexicana</h1>
+                </div>
+                
+
+                <div class="carts3">
+                    <div>
+                     <a href="./categorias.html"><img src="./imagenes/Papeleria-3.jpg" alt=""></a>   
+                    </div>
+                    <p class="title">Papeleria </p>
+                    <h1>Todo para tus utiles escolares</h1>
+                </div>
+
+                <div class="carts3">
+                    <div>
+                        <a href="./categorias.html"> <img src="./imagenes/Categoria-Pasteles-compress.webp" alt=""></a>
+                    </div>
+                    <p class="title">Postres </p>
+                    <h1>Los mejores postres de la zona</h1>
+                </div>
+
+                <div class="carts3">
+                    <div>
+                        <a href=""><img src="./imagenes/20180717_093300866_dcc180718-019f01_crop1531881269264.jpg_258117318.jpg" alt=""></a>
+                    </div>
+                    <p> Juguetes</p>
+                        <h1>Encuentra variedad de juguetes</h1>
+                </div>
+        </section>
+
+        <section class="container">
+
+            Informacion
+
+            <div class="products1">
+                <div class="carts1">
+                    <div>
+                       <a href="#pagos"> <img src="./imagenes/carduse_card_payment_5122.png" alt=""> </a> 
+                      
+                    </div>
+                    <p class="title">Elige como pagar: paga con tarjeta, debito o efectivo. </p>
+                    <h1>Como pagar con MarkeTec</h1>
+                </div>
+
+                <div class="carts1">
+                    <div>
+                     <a href=""><img src="./imagenes/product_delivery_icon_152013.png" alt=""></a>   
+                       
+                    </div>
+                    <p class="title"> Envio gratis desde $50, tienes envio gratis en productos seleccionados.</p>
+                    <h1>Conoce mas sobre este beneficio</h1>
+                    
+                </div>
+                <div class="carts1">
+                    <div>
+                       <a href="/ayuda.html"> <img src="./imagenes/firewallshield_114494.png" alt=""> </a> 
+                        
+                    </div>
+                    <p class="title"> Seguridad, de principio a fin porque siempre estas protegido </p>
+                    <h1>¿Como te protegemos?</h1>
+                   
+                </div>
+                
+        </section>
+        
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="/ayuda.html">Acerca de nosotros</a></li>
+                        <li><a href="/ayuda.html">Nuestros servicios</a></li>
+                        <li><a href="/ayuda.html">Politicas de privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Podemos Ayudarte</h4>
+                    <ul>
+                        <li><a href="/ayuda.html">Reembolsos</a></li>
+                        <li><a href="/ayuda.html">Metodos de pago</a></li>
+                        <li><a href="/ayuda.html">Seguridad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Siguenos</h4>
+                    <div class="social-links">
+                        <a href="/ayuda.html"><i class="fab fa-facebook-f"><img src="/catalogo/whatsapp_tile_logo_icon_169898.png" alt=""></i></a>
+                        <a href="/ayuda.html"><i class="fab fa-twitter"><img src="/catalogo/1485482214-facebook_78681.png" alt=""></i></a>
+                        <a href="/ayuda.html"><i class="fab fa-instagram"><img src="/catalogo/1491579583-yumminkysocialmedia02_83111.png" alt=""></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+   <div class="ultimo"> © 2022 MarkeTec.</div>
+            <script src="jsinicio.js"></script>
+</body>
+</html>

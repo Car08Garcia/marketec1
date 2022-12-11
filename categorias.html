@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarkeTec</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+
+</head>
+<body>
+    <header>
+			
+        <div>
+            <img class="logo"  src="/imagenes/final_azul.png" alt="Logo de la marca" >
+        </div>
+        <input type="text" name="buscador" id="buscador" placeholder="Buscar...">
+        <nav class="navmenu">
+           <ul class="nav-links">
+                <li class="menu"><a class="menu1" href="/index.html">Inicio</a></li>
+                <li class="menu"><a class="menu1" href="/categorias.html">Categorias</a></li>
+                <li class="menu"><a class="menu1" href="/vender.html">Vender</a></li>
+                <li class="menu"><a class="menu1" href="/ayuda.html">Ayuda</a></li>
+           </ul>            
+        </nav>
+
+        <div>
+            <img onmouseover="showCart(this)" class="cart" src="./imagenes/compras.png" alt="">
+            <p class="count-product">0</p>
+        </div>
+        <div class="cart-products" id="products-id">
+            <p class="close-btn" onclick="closeBtn()">X</p>
+            <h3>Mi carrito</h3>
+            <div class="card-items">
+                
+            </div>
+            <h2>Total: <strong class="price-total">0</strong> $</h2>
+        </div>
+    </div>
+        </header>
+
+        <section class="promocion">
+            <div class="anuncio">
+                <h5>Categorias</h5>
+                <p>Conoce las diferentes opciones que tenemos para ti</p>
+            </div>
+        </section>
+    <div class="section"> 
+        
+<br><br>
+
+        <section class="container">
+
+            Farmacias
+
+            <div class="products">
+                <div class="carts">
+                    <div>
+                        <img src="./catalogo/paracetamol.webp" alt="">
+                        <p>$<span>65</span></p>
+                    </div>
+                    <p class="title">Paracetamol 500mg</p>
+                    <h1 class="tienda">Vendido por: Farmacias Similares San Juan</h1>
+                    <article>Envio gratis en pedidos mayores de $100
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio1">★</label><!--
+                              --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio2">★</label><!--
+                              --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio3">★</label><!--
+                              --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio4">★</label><!--
+                              --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio5">★</label>
+                            </p>
+                          </form>
+                    </article>
+                    <a  href="" data-id="1" class="btn-add-cart"> + añadir</a>
+                    
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="./catalogo/4331757.jpg" alt="">
+                        <p>$<span>95</span></p>
+                    </div>
+                    <p class="title"> Amoxixilina 500mg</p>
+                    <h1>Vendido por: Farmacia Colonial</h1>
+                    <article>Envio gratis en pedidos mayores de $100
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio1">★</label><!--
+                              --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio2">★</label><!--
+                              --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio3">★</label><!--
+                              --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio4">★</label><!--
+                              --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio5">★</label>
+                            </p>
+                          </form>
+                    </article>
+                    <a href="" class="btn-add-cart" data-id="2">+ añadir</a>
+                    
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="./catalogo/650240017100.png" alt="">
+                        <p>$<span>35</span></p>
+                    </div>
+                    <p class="title"> Antigripal 10P/10T</p>
+                    <h1>Vendido por: Farmacia Saturno</h1>
+                    <article>Envio gratis en pedidos mayores de $100
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio1">★</label><!--
+                              --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio2">★</label><!--
+                              --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio3">★</label><!--
+                              --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio4">★</label><!--
+                              --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio5">★</label>
+                            </p>
+                          </form>
+                    </article>
+                    <a href="" data-id="3" class="btn-add-cart">+ añadir</a>
+                    
+                    
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="./catalogo/688922_895124243.jpg" alt="">
+                        <p>$<span>20</span></p>
+                    </div>
+                    <p class="title"> Losartán 30T 50mg </p>
+                    <h1>Vendido por: Farmacia Oropeza</h1>
+                    <article>Envio gratis en pedidos mayores de $100
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio1">★</label><!--
+                              --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio2">★</label><!--
+                              --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio3">★</label><!--
+                              --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio4">★</label><!--
+                              --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio5">★</label>
+                            </p>
+                          </form>
+                    </article>
+                    <a href="" data-id="4" class="btn-add-cart">+ añadir</a>
+                    
+                </div>
+        </section>
+
+    
+        <section class="container">
+
+            Abarrotes
+
+            <div class="products">
+                <div class="carts">
+                    <div>
+                        <img src="./catalogo/Deodorant-No-Background.png" alt="">
+                        <p><span>20</span>$</p>
+                    </div>
+                    <p class="title"> Desodorante en barra </p>
+                    <h1>Vendido por: Abarrotes La Consentida</h1>
+                    <article>Envio gratis en pedidos mayores de $80
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio1">★</label><!--
+                              --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio2">★</label><!--
+                              --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio3">★</label><!--
+                              --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio4">★</label><!--
+                              --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio5">★</label>
+                            </p>
+                          </form>
+                    </article>
+                    <a href="" data-id="1" class="btn-add-cart"> + añadir</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="./catalogo/Coca-Cola-PNG-Clipart.png" alt="">
+                        <p><span>20</span>$</p>
+                    </div>
+                    <p class="title"> Coca Cola 1.25L </p>
+                    <h1>Vendido por: Miscelánea Mirna</h1>
+                    <article>Envio gratis en pedidos mayores de $80
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio1">★</label><!--
+                              --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio2">★</label><!--
+                              --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio3">★</label><!--
+                              --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio4">★</label><!--
+                              --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio5">★</label>
+                            </p>
+                          </form>
+                    </article>
+                    <a href="" class="btn-add-cart" data-id="2">+ añadir</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="./imagenes/1041_1.webp" alt="">
+                        <p>$<span>28</span></p>
+                    </div>
+                    <p class="title"> <strong>Oferta</strong> Papel Higiénico 400 hojas</p>
+                    <h1>Vendido por: Abarrotes El Pequeño Josué</h1>
+                    <article>  Envio gratis en pedidos mayores de $80 
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio1">★</label><!--
+                              --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio2">★</label><!--
+                              --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio3">★</label><!--
+                              --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio4">★</label><!--
+                              --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio5">★</label>
+                            </p>
+                          </form>
+                    </article>
+                    <a href="" data-id="3" class="btn-add-cart">+ añadir</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="./catalogo/00750105537791L.webp" alt="">
+                        <p>$<span>24</span></p>
+                    </div>
+                    <p class="title"> Leche Santa Clara 180ml </p>
+                    <h1>Vendido por: Abarrotes La Asunción</h1>
+                    <article>Envio gratis en pedidos mayores de $80
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio1">★</label><!--
+                              --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio2">★</label><!--
+                              --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio3">★</label><!--
+                              --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio4">★</label><!--
+                              --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio5">★</label>
+                            </p>
+                          </form>
+                    </article>
+                    <a href="" data-id="4" class="btn-add-cart">+ añadir</a>
+                </div>
+        </section>
+
+
+        <section class="container">
+
+            Comida Mexicana 
+
+            <div class="products">
+                <div class="carts">
+                    <div>
+                        <img src="./catalogo/Receta-de-Pozole-Rojo-2.webp" alt="">
+                        <p>$<span>80</span></p>
+                    </div>
+                    <p class="title"> Pozole  </p>
+                    <h1>Vendido por: Don Camacho Pozoleria</h1>
+                    <article>Envio gratis en pedidos mayores de $150
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio1">★</label><!--
+                              --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio2">★</label><!--
+                              --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio3">★</label><!--
+                              --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio4">★</label><!--
+                              --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio5">★</label>
+                            </p>
+                          </form>
+                    </article>
+                    <a href="" data-id="1" class="btn-add-cart"> + añadir</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="./catalogo/IMG_4637-1020x680.jpg" alt="">
+                        <p>$<span>60</span></p>
+                    </div>
+                    <p class="title"> Tacos de guisado 3Pz </p>
+                    <h1>Vendido por: Cocina Maria</h1>
+                    <article>Envio gratis en pedidos mayores de $150
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio1">★</label><!--
+                              --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio2">★</label><!--
+                              --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio3">★</label><!--
+                              --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio4">★</label><!--
+                              --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio5">★</label>
+                            </p>
+                          </form>
+                    </article>
+                    <a href="" class="btn-add-cart" data-id="2">+ añadir</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="./catalogo/1200px-01_Chilaquiles_verdes_con_frijoles_chinos.jpg" alt="">
+                        <p>$<span> 25</span></p>
+                    </div>
+                    <p class="title"> Chilaquiles </p>
+                    <h1>Vendido por: Chill AndKill</h1>
+                    <article>Envio gratis en pedidos mayores de $80
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio1">★</label><!--
+                              --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio2">★</label><!--
+                              --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio3">★</label><!--
+                              --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio4">★</label><!--
+                              --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio5">★</label>
+                            </p>
+                          </form>
+                    </article>
+                    <a href="" data-id="3" class="btn-add-cart">+ añadir</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="./catalogo/1366_2000.jpg" alt="">
+                        <p>$<span>50</span></p>
+                    </div>
+                    <p class="title"> Sopes 3Pz </p>
+                    <h1>Vendido por: Un Rincon En San Juan</h1>
+                    <article>Envio gratis en pedidos mayores de $80
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio1">★</label><!--
+                              --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio2">★</label><!--
+                              --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio3">★</label><!--
+                              --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio4">★</label><!--
+                              --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio5">★</label>
+                            </p>
+                          </form>
+                    </article>
+                    <a href="" data-id="4" class="btn-add-cart">+ añadir</a>
+                </div>
+        </section>
+    
+        <section class="container">
+
+            Postres
+
+            <div class="products">
+                <div class="carts">
+                    <div>
+                        <img src="./catalogo/receta-facil-de-pastel-de-chocolate-en-estufa.jpg" alt="">
+                        <p>$<span>250</span></p>
+                    </div>
+                    <p class="title"> Pastel chocolate 1k </p>
+                    <h1>Vendido por: Pasteleria Fabi</h1>
+                    <article>Envio gratis en pedidos mayores de $80
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio1">★</label><!--
+                              --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio2">★</label><!--
+                              --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio3">★</label><!--
+                              --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio4">★</label><!--
+                              --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio5">★</label>
+                            </p>
+                          </form>
+                    </article>
+                    <a href="" data-id="1" class="btn-add-cart"> + añadir</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="./catalogo/2655296323f04201d81b73d00dca046a.jpg" alt="">
+                        <p><span>60</span>$</p>
+                    </div>
+                    <p class="title"> Panques 3pz </p>
+                    <h1>Vendido por: Postres La estrella</h1>
+                    <article>Envio gratis en pedidos mayores de $80
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio1">★</label><!--
+                              --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio2">★</label><!--
+                              --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio3">★</label><!--
+                              --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio4">★</label><!--
+                              --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio5">★</label>
+                            </p>
+                          </form>
+                    </article>
+                    <a href="" class="btn-add-cart" data-id="2">+ añadir</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="./catalogo/06.-pay-helado-de-limon-300x225.jpg" alt="">
+                        <p>$<span>18</span></p>
+                    </div>
+                    <p class="title"> Pay de limon rebanada </p>
+                    <h1>Vendido por: Pasteleria Aranda</h1>
+                    <article>Envio gratis en pedidos mayores de $80
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio1">★</label><!--
+                              --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio2">★</label><!--
+                              --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio3">★</label><!--
+                              --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio4">★</label><!--
+                              --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio5">★</label>
+                            </p>
+                          </form>
+                    </article>
+                    <a href="" data-id="3" class="btn-add-cart">+ añadir</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src=".//catalogo/Gelatina-mosaico2.jpg" alt="">
+                        <p>$<span>180</span></p>
+                    </div>
+                    <p class="title"> Gelatina Mosaico 1k</p>
+                    <h1>Vendido por: Pasteleria Aranda</h1>
+                    <article>Envio gratis en pedidos mayores de $80
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio1">★</label><!--
+                              --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio2">★</label><!--
+                              --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio3">★</label><!--
+                              --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio4">★</label><!--
+                              --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio5">★</label>
+                            </p>
+                          </form>
+                    </article>
+                    <a href="" data-id="4" class="btn-add-cart">+ añadir</a>
+                </div>
+        </section>
+
+
+        <section class="container">
+
+            Papeleria
+
+            <div class="products">
+                <div class="carts">
+                    <div>
+                        <img src="./imagenes/image_06ca7234-a97e-4889-8c33-779027f55447_720x@2x.webp" alt="">
+                        <p>$<span>80</span></p>
+                    </div>
+                    <p class="title"> Plumones 12Pz </p>
+                    <h1>Vendido por: Papeleria Luna</h1>
+                    <article>Envio gratis en pedidos mayores de $80
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio1">★</label><!--
+                              --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio2">★</label><!--
+                              --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio3">★</label><!--
+                              --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio4">★</label><!--
+                              --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio5">★</label>
+                            </p>
+                          </form>
+                    </article>
+                    <a href="" data-id="1" class="btn-add-cart"> + añadir</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="./catalogo/7702111275300_00.webp" alt="">
+                        <p><span>40</span>$</p>
+                    </div>
+                    <p class="title"> Cuaderno Norma Kiut </p>
+                    <h1>Vendido por: Papeleria Luz</h1>
+                    <article>Envio gratis en pedidos mayores de $80
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio1">★</label><!--
+                              --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio2">★</label><!--
+                              --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio3">★</label><!--
+                              --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio4">★</label><!--
+                              --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio5">★</label>
+                            </p>
+                          </form>
+                    </article>
+                    <a href="" class="btn-add-cart" data-id="2">+ añadir</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="./catalogo/7174042-1.jpg" alt="">
+                        <p>$<span>188</span></p>
+                    </div>
+                    <p class="title"> Lapicera Chenson Happy </p>
+                    <h1>Vendido por: Papeleria Meza</h1>
+                    <article>Envio gratis en pedidos mayores de $80
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio1">★</label><!--
+                              --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio2">★</label><!--
+                              --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio3">★</label><!--
+                              --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio4">★</label><!--
+                              --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio5">★</label>
+                            </p>
+                          </form>
+                    </article>
+                    <a href="" data-id="3" class="btn-add-cart">+ añadir</a>
+                </div>
+                <div class="carts">
+                    <div>
+                        <img src="./catalogo/120312_d47d7337-09db-4e1d-b690-e177a5a68f7d_grande.webp" alt="">
+                        <p>$<span>45</span></p>
+                    </div>
+                    <p class="title"> 
+                        Pluma bic mediano 2Pz</p>
+                    <h1>Vendido por: Papeleria Lupita</h1>
+                    <article>Envio gratis en pedidos mayores de $80
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio1">★</label><!--
+                              --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio2">★</label><!--
+                              --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio3">★</label><!--
+                              --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio4">★</label><!--
+                              --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio5">★</label>
+                            </p>
+                          </form>
+                    </article>
+                    <a href="" data-id="4" class="btn-add-cart">+ añadir</a>
+                </div>
+        </section>
+
+
+
+
+       </div>
+    
+       <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#">Acerca de nosotros</a></li>
+                        <li><a href="#">Nuestros servicios</a></li>
+                        <li><a href="#">Politicas de privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Podemos Ayudarte</h4>
+                    <ul>
+                        <li><a href="#">Reembolsos</a></li>
+                        <li><a href="#">Metodos de pago</a></li>
+                        <li><a href="#">Seguridad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Siguenos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"><img src="/catalogo/whatsapp_tile_logo_icon_169898.png" alt=""></i></a>
+                        <a href="#"><i class="fab fa-twitter"><img src="/catalogo/1485482214-facebook_78681.png" alt=""></i></a>
+                        <a href="#"><i class="fab fa-instagram"><img src="/catalogo/1491579583-yumminkysocialmedia02_83111.png" alt=""></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+   <div class="ultimo"> © 2022 MarkeTec.</div>
+
+        <script>
+            function showCart(x){
+                document.getElementById("products-id").style.display = "block";
+            }
+            function closeBtn(){
+                 document.getElementById("products-id").style.display = "none";
+            }
+        </script>
+
+            <script src="javascript.js"></script>
+</body>
+</html>
